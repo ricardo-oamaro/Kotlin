@@ -1,13 +1,11 @@
 package br.com.alura.forum
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.runApplication
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories
+import org.springframework.cache.annotation.EnableCaching
 
 @SpringBootApplication
-//@EntityScan("br.com.alura.forum.model")
-//@EnableJpaRepositories("br.com.alura.forum.repository")
+@EnableCaching
 class ForumApplication
 
 fun main(args: Array<String>) {
